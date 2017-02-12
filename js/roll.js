@@ -72,14 +72,36 @@ roll.roll_look = function (book) {
   $('#body').text(rng.sample(book.body) + ' body');
   $('#style').text(rng.sample(book.style));
 };
+/*
+-3:  83.3%   16.7%    0.0%
+-2:  72.2%   25.0%    2.8%
+-1:  58.3%   33.3%    8.3%
++0:  41.7%   41.7%   16.7%
++1:  27.8%   44.4%   27.8%
++2:  16.7%   41.7%   41.7%
++3:   8.3%   33.3%   58.3%
+*/
+roll.stat_probs = {
+  '-3': '16.7% successful (0% total success)',
+  '-2': '27.8% successful (2.8% total success)',
+  '-1': '41.6% successful (8.3% total success)',
+  '+0': '58.4% successful (16.7% total success)',
+  '+1': '72.2% successful (27.8% total success)',
+  '+2': '83.4% successful (41.7% total success)',
+  '+3': '91.6% successful (58.3% total success)'
+};
 
 roll.roll_stats = function (book) {
   var stats = rng.sample(book.stats);
-  $('#cool').text(roll.format(stats[0]));
-  $('#hard').text(roll.format(stats[1]));
-  $('#hot').text(roll.format(stats[2]));
-  $('#sharp').text(roll.format(stats[3]));
-  $('#weird').text(roll.format(stats[4]));
+  var statify = function (x) {
+    var n = '&nbsp;'
+    return x.toString() + n+n+n+n+n + roll.stat_probs[x];
+  };
+  $('#cool').html(statify(roll.format(stats[0])));
+  $('#hard').html(statify(roll.format(stats[1])));
+  $('#hot').html(statify(roll.format(stats[2])));
+  $('#sharp').html(statify(roll.format(stats[3])));
+  $('#weird').html(statify(roll.format(stats[4])));
 };
 
 roll.roll_moves = function (book) {

@@ -9,6 +9,11 @@ var data = {
     'catface', 'hardcastle', 'hagar', 'facer', 'monster mash', 'otterpop',
     'tony the shrimp', 'yellow', 'zoomacroom',
     'varla', 'rosie', 'billie', 'linda', 'kirk', 'tommy',
+    'zed', 'consuella', 'may', 'friend', 'avalow', 'zardoz', 'saden',
+    'snake', 'cabbie', 'hauk', 'the prez', 'the duke', 'brain', 'maggie', 'rehme',
+    'taylor', 'romero', 'cronenberg', 'slag',
+    'suzy', 'sara', 'miss tanner', 'madame blanc', 'olga', 'professor milius',
+    'cook', 'sonia', 'verdegast', 'mandel', 'mother suspiriorum', 'goblin',
   ],
 
   'playbooks': [

@@ -2,35 +2,43 @@
 <head>
 <title>apoc</title>
 </head>
-<body>
+<body style="font-family:monospace;">
 <input id="inseed"></input><button type="button" id="restore">restore</button><br>
-<p>seed: <span id="seed">9ae718f8</span> <button type="button" id="roll">re-roll</button></p>
+<p>seed: <span id="seed">9ae718f8</span><br>
+<button type="button" id="roll">re-roll</button></p>
 <div id="main">
-<p>name: <span id="name">janet</span> <button type="button" id="rollname">re-roll name</button></p>
-<p>playbook: <span id="book">brainer</span> <button id="rollbook">re-roll playbook</button></p>
+<p>name: <span id="name">janet</span><br>
+<button type="button" id="rollname">re-roll name</button></p>
+<p>playbook: <span id="book">brainer</span><br>
+<button id="rollbook">re-roll playbook</button></p>
 
-<p><button id="rolllook">re-roll look</button><br>
+<p>look:<br>
 <span id="face">normal face</span> with <span id="eyes">normal eyes</span>.<br>
-<span id="body">normal body</span> in <span id="style">normal wear</span>.</p>
-
-<p>stats <button type="button" id="rollstats">re-roll stats</button><br>
-cool: <span id="cool">+1</span><br>
-hard: <span id="hard">+1</span><br>
-hot: <span id="hot">+1</span><br>
-sharp: <span id="sharp">+1</span><br>
-weird: <span id="weird">+1</span><br>
+<span id="body">normal body</span> in <span id="style">normal wear</span>.<br>
+<button id="rolllook">re-roll look</button>
 </p>
-<p>moves <button type="button" id="rollmoves">re-roll moves</button></p>
+
+<p>stats:<br>
+cool &nbsp;<span id="cool">+1</span><br>
+hard &nbsp;<span id="hard">+1</span><br>
+hot &nbsp;&nbsp;<span id="hot">+1</span><br>
+sharp <span id="sharp">+1</span><br>
+weird <span id="weird">+1</span><br>
+<button type="button" id="rollstats">re-roll stats</button>
+</p>
+<p>moves</p>
 <ul id="moves">
 <li>abc</li>
 <li>xyz</li>
 </ul>
-<p>gear <button type="button" id="rollgear">re-roll gear</button></p>
+<button type="button" id="rollmoves">re-roll moves</button>
+<p>gear</p>
 <ul id="gear">
 <li>sunglasses</li>
 <li>pocket watch</li>
 <li>swiss army knife</li>
 </ul>
+<button type="button" id="rollgear">re-roll gear</button>
 <script src="js/underscore-min.js"></script>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/data.js"></script>
